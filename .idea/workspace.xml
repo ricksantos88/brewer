@@ -2,14 +2,16 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="brewer:war" />
+      <artifact name="brewer:war exploded" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3d868d5f-0521-4e40-b390-9f2a16f1cea0" name="Default Changelist" comment="push in intellij">
-      <change afterPath="$PROJECT_DIR$/.idea/brewer.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="3d868d5f-0521-4e40-b390-9f2a16f1cea0" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wendel/brewer/config/init/AppInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wendel/brewer/config/init/AppInitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wendel/brewer/controller/CervejasController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wendel/brewer/controller/CervejasController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wendel/brewer/model/Cerveja.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wendel/brewer/model/Cerveja.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/cerveja/CadastroCerveja.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/cerveja/CadastroCerveja.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -46,7 +48,10 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="File.Encoding" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -62,9 +67,10 @@
   </component>
   <component name="RunManager">
     <configuration name="Tomcat8" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.0.35" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="UPDATING_POLICY" value="restart-server" />
+      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
       <deployment>
-        <artifact name="brewer:war">
+        <artifact name="brewer:war exploded">
           <settings>
             <option name="CONTEXT_PATH" value="/brewer" />
           </settings>
@@ -129,7 +135,7 @@
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="brewer:war" />
+          <artifact name="brewer:war exploded" />
         </option>
       </method>
     </configuration>
@@ -146,7 +152,7 @@
       <updated>1572653848953</updated>
       <workItem from="1572653850973" duration="1950000" />
       <workItem from="1572656830452" duration="167000" />
-      <workItem from="1572794349368" duration="350000" />
+      <workItem from="1572794349368" duration="3361000" />
     </task>
     <task id="LOCAL-00001" summary="push in intellij">
       <created>1572794538481</created>
@@ -155,7 +161,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572794538481</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="push in intellij">
+      <created>1572794705742</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1572794705742</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

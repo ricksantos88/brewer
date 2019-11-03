@@ -1,14 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	  xmlns:th="http://www.thymeleaf.org">
+
+	<head>
+		<meta charset="utf-8">
+		
+	</head>
 	<body>
 		<h1>BREWER</h1>
 		<h3>Cadastro de cerveja!</h3>
 	</body>
 
 	<form method="POST">
-		<label>SKU</label>
+		<span th:text="${mensagem}"></span>
+		<br/>
+
+		<label for="sku">SKU</label>
 		<input type="text" name="sku" id="sku">
 		<br/>
+
+		<label for="nome">Nome</label>
+		<input type="text" name="nome" id="nome">
+		<br/>
+
+		<label for="descricao">Descrição</label>
+		<textarea name="descricao" id="descricao" cols="30" rows="10"></textarea>
+
 		<input type="submit" value="Salvar">
 
 	</form>
