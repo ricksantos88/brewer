@@ -15,20 +15,16 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 public class CervejasController {
 	
 	@RequestMapping("/cervejas/novo")
-	public String novo() {
+	public String novo(Cerveja cerveja) {
 		return "cerveja/CadastroCerveja";
 	}
 
 	@RequestMapping(value = "/cervejas/novo", method = RequestMethod.POST)
 	public String cadastrar(@Valid Cerveja cerveja, BindingResult result, Model model, RedirectAttributes attributes) {
 		if(result.hasErrors()) {
-			System.out.println("TEM ERRO SIM");
-			System.out.println(result.getAllErrors());
-			model.addAttribute("mensagem", "Erro no fomulário.");
-			return "cerveja/CadastroCerveja";
+			return novo(cerveja);
 		}
 		
-		System.out.println("sku >> " + cerveja.getSku());
 		attributes.addFlashAttribute("mensagem", "Cerveja salva com sucesso.");
 		return "redirect:/cervejas/novo";
 	}
